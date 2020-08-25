@@ -9,7 +9,7 @@ public class kick extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event){
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if(args[0].equalsIgnoreCase("fuck")&&args[1].equalsIgnoreCase("you")&&args[2].equalsIgnoreCase("louis")){
+        if(args[0].equalsIgnoreCase("please")&&args[1].equalsIgnoreCase("kick")&&args[2].equalsIgnoreCase("me")){
             String target = event.getMember().getUser().getId();
 
             event.getGuild().kick(target).queue();
